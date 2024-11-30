@@ -34,7 +34,7 @@ def init_window():
 # Функция отображения картинок
 def load_image(name, colorkey=None):
     # Добавляем к имени картинки имя папки
-    fullname = os.path.join('data', name)
+    fullname = name
     # Загружаем картинку
     image = pygame.image.load(fullname)
     image = image.convert()
